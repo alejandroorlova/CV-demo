@@ -1,0 +1,100 @@
+<div class="cv-container">
+  <div class="cv-header">
+    <div class="profile-photo-container">
+      <img src="assets/img/Perfil.png" alt="Foto" class="profile-photo" />
+    </div>
+    <div class="header-details">
+      <h1>Alejandro Uitziliui Almazán Orlova</h1>
+      <p><mat-icon>phone</mat-icon> 729 841 91 91</p>
+      <p><mat-icon>email</mat-icon> alejandro.orlova@gmail.com</p>
+      <p><mat-icon>public</mat-icon> Mexicano</p>
+      <p><mat-icon>cake</mat-icon> 36 años</p>
+    </div>
+  </div>
+
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Objetivos </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Colaborar en el área de las tecnologías de la información de una empresa que me ofrezca la oportunidad de desarrollarme de manera personal y profesional respondiendo eficientemente a su crecimiento a través de proyectos de automatización de procesos mediante el desarrollo de software.</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Habilidades </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Pensamiento crítico y creativo, liderazgo, trabajo en equipo, capacidad para la toma de decisiones y facilidad de palabra.
+        Soy una persona autodidacta, que sin importar la problemática busco soluciones.
+        </p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Estudios </mat-panel-title>
+      </mat-expansion-panel-header>      
+      <p>Ingenieria en Informtica <br> Universidad Politécnica del Estado de Morelos (2012 - 2015)</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Experiencia Laboral </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div *ngFor="let job of jobs" class="laboral-experience-container">
+        <div class="year-container">{{ job.year }}</div>
+        <div class="info-container">
+          <div class="company">{{ job.company }}</div>
+          <div class="position">{{ job.position }}</div>
+          <div class="activities">{{ job.activities }}</div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Tecnologías </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul>
+        <li>Html 5</li>
+        <li>CSS</li>
+        <li>TypeScript</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>C# (Intermedio)</li>
+        <li>JAVA (Intermedio)</li>
+      </ul>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Frameworks </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul>
+        <li>Angular</li>
+        <li>Ionic 4</li>
+        <li>Spring</li>
+      </ul>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Bases de Datos </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul>
+        <li>MySql</li>
+        <li>Sql Server</li>
+        <li>Informix</li>
+      </ul>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Proyectos </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div *ngFor="let project of projects" class="projects-container">
+        <div class="project-company">{{ project.company }}</div>
+        <div>{{ project.description }}</div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

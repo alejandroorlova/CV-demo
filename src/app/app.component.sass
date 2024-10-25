@@ -1,0 +1,120 @@
+.cv-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  min-height: 100vh
+  background: linear-gradient(to right, #1976d2, #42a5f5)
+  color: #fff
+  padding: 20px
+  box-sizing: border-box
+
+  .cv-header
+    display: flex
+    align-items: center
+    gap: 20px
+    background-color: rgba(255, 255, 255, 0.2) 
+    padding: 20px
+    border-radius: 8px
+    width: 100%
+    max-width: 800px
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+
+    .profile-photo-container
+        width: 150px
+        height: 150px
+        border-radius: 50%
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 2px solid #fff
+        background-color: #fff
+
+    .profile-photo
+        width: 94%
+        height: 100%
+        object-fit: cover
+
+    .header-details
+      display: flex
+      flex-direction: column
+      gap: 10px
+      color: #fff
+
+      h1
+        margin: 0
+        font-size: 24px
+
+      p
+        display: flex
+        align-items: center
+        gap: 8px
+        font-size: 16px
+
+        mat-icon
+          color: #ffc107
+
+  mat-accordion
+    width: 100%
+    max-width: 800px
+    margin-top: 20px
+
+    mat-expansion-panel
+      background-color: rgba(255, 255, 255, 0.2)
+      border-radius: 8px
+      margin-bottom: 10px
+      overflow: hidden
+
+      mat-expansion-panel-header
+        background-color: #42a5f5
+        color: #fff
+        font-weight: bold
+
+      p, ul, li
+        color: #fff
+      p, ul
+        margin-top: 30px
+      .laboral-experience-container
+        color: white
+        margin-top: 20px
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 100%
+        gap: 20px
+        .year-container
+            writing-mode: vertical-rl
+            text-orientation: mixed 
+            transform: rotate(180deg)
+            font-size: 24px
+            color: black
+            margin: 0
+            padding: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 100px 
+            font-weight: bold            
+        .info-container
+            .company
+                font-size: 20px
+            .position
+                font-size: 18px
+    .projects-container
+        margin: 0
+        margin-top: 30px
+        color: white
+        .project-company
+            font-size: 20px
+        
+
+@media (max-width: 768px)
+  .cv-header
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+    .profile-photo
+      margin-bottom: 10px
